@@ -1,0 +1,182 @@
+/* common css start */
+*{
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 15px 20px;
+  display: inline-block;
+}
+p {
+  color: #000;
+}
+/* comnmon css end */
+.container {
+  width: 80%;
+  margin: auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+img {
+  max-width: 100%;
+}
+#sidebar {
+  position: fixed;
+  width: 250px;
+  top: 72px;
+  right: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+#sidebar.active{
+  opacity: 1;
+  visibility: visible;
+  transform: scaleX(1);
+}
+#sidebar ul li a{
+  background-color: rgb(248, 178, 47);
+  font-size: 20px;
+  display: block;
+  padding: 10px 15px;
+  transition: 0.5s;
+}
+#sidebar ul li:hover a{
+  color: black;
+}
+nav {
+  background-color: rgb(248, 178, 47);
+  height: 72px;
+}
+nav .row {
+  align-items: center;
+  height: 72px;
+}
+nav .logo {
+  width: 20%;
+}
+nav img {
+  width: 120px;
+}
+nav .menu {
+  width: 80%;
+}
+nav .menu ul {
+  justify-content: flex-end;
+}
+nav .menu ul li a{
+  transition: 0.5s;
+}
+nav .menu ul li a:hover{
+  color: #000;
+}
+/* nav css end */
+/* banner css start */
+#banner {
+  height: 500px;
+}
+#banner h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  color: #000;
+}
+#banner p {
+  font-size: 16px;
+  text-align: justify;
+  width: 95%;
+}
+#banner .container a {
+  background-color: rgb(248, 178, 47);
+  margin: 10px 0;
+}
+#banner .row {
+  align-items: center;
+  height: 500px;
+}
+#banner .dark {
+  width: 60%;
+}
+#banner .photo{
+  width: 40%;
+}
+#banner img {
+  width: 456px;
+  height: 256px;
+  
+}
+/* banner css end */
+/* service css start */
+#service {
+  width: 100%;
+  height: 240px;
+}
+#service .container .s1 {
+  width: 25%;
+  text-align: center;
+}
+#service .container i {
+  font-size: 50px;
+  color: rgb(248, 178, 47);
+  font-weight: 700;
+}
+#service .container h2 {
+  font-size: 25px;
+  font-weight: 400px;
+  margin: 15px;
+}
+/* service css end */
+/* contact css start */
+#contact {
+  padding: 100px 0;
+}
+#contact form{
+  margin: auto;
+  width: 50%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+#contact input {
+  font-size: 20px;
+  width: 100%;
+  border: none;
+  padding: 10px 15px;
+  box-shadow: inset 0 0 5px rgb(0 0 0 / 50%);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+#contact form .password{
+  position: relative;
+}
+#contact form .password i{
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+}
+#contact button{
+  font-size: 20px;
+  font-weight: 400;
+  display: inline-block;
+  color: #fff;
+  background-color: rgb(248, 178, 47);
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}

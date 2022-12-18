@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+</head>
+<body>
+    <section id="sidebar">
+        <ul>
+            <li><a href="#">Item-1</a></li>
+            <li><a href="#">Item-2</a></li>
+            <li><a href="#">Item-3</a></li>
+            <li><a href="#">Item-4</a></li>
+            <li><a href="#">Item-5</a></li>
+        </ul>
+    </section>
+    <nav>
+        <div class="container">
+            <div class="row">
+                <div class="logo">
+                    <img src="image/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <ul class="row">
+                        <li><a href="#">home</a></li>
+                        <li><a href="#">about</a></li>
+                        <li><a href="#">contact</a></li>
+                        <li><a href="#">faq</a></li>
+                        <li><a href="#" onclick="menuShow()">
+                            <i class="fas fa-bars" id="menu_toggle_bar" ></i></a></li>
+                        <li><a href="#">
+                            <i class="fas fa-moon"></i>
+                        </a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section id="banner">
+        <div class="container row">
+                <div class="dark">
+                    <h1>DARK MODE</h1>
+                    <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi illum doloribus tempora consectetur 
+                        quibusdam non, libero placeat impedit corrupti accusamus earum voluptatem sint facere veniam autem 
+                        rerum. Earum, architecto quos?</P>
+                    <a href="#">know more</a>
+                </div>
+                <div class="photo">
+                    <img src="image/banner_bg.jpg" alt="">
+                </div>
+        </div>
+    </section>
+    <section id="service">
+        <div class="container row">
+            <div class="s1">
+                <i class="fas fa-truck"></i>
+                <h2>SERVICE TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum iusto ipsum consequatur placeat facilis ab omnis illo pariatur at!</p>
+            </div>
+            <div class="s1">
+                <i class="fas fa-truck"></i>
+                <h2>SERVICE TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum iusto ipsum consequatur placeat facilis ab omnis illo pariatur at!</p>
+            </div>
+            <div class="s1">
+                <i class="fas fa-truck"></i>
+                <h2>SERVICE TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum iusto ipsum consequatur placeat facilis ab omnis illo pariatur at!</p>
+            </div>
+            <div class="s1">
+                <i class="fas fa-truck"></i>
+                <h2>SERVICE TITLE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil laborum iusto ipsum consequatur placeat facilis ab omnis illo pariatur at!</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <form action="">
+                <div class="form">
+                    <div class="email">
+                        <input type="email" placeholder="Enter Your Email">
+                    </div>
+                    <div class="password">
+                        <input type="password" id="password" placeholder="Enter Your Password">
+                        <i class="fas fa-eye-slash" id="password_eye" onclick="passToggle()"></i>
+                    </div>
+                    <button>SUBMIT</button>
+                </div>
+            </form>
+        </div>
+
+    </section>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
